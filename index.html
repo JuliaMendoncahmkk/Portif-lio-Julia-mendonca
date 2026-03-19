@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio – Julia Luciana Feldens Mendonca</title>
+  <meta name="description" content="Portfólio de Julia Luciana Feldens Mendonca — desenvolvedora em constante aprendizado." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Ir para início">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="title">Julia L. F. Mendonca</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#formacao">Formação & Idiomas</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Home -->
+    <section id="home" class="section">
+      <h1>Bem-vinda(o) ao meu portfólio</h1>
+      <p class="lead">
+        Eu sou <strong>Julia Luciana Feldens Mendonca</strong>, desenvolvedora em constante aprendizado.
+        Aqui você encontra um pouco sobre mim, minha formação e mini-projetos em HTML, CSS e JS.
+      </p>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+      <h2>Sobre mim</h2>
+      <div class="card">
+        <img src="JuIA.jpg" alt="Foto de Julia" class="foto-perfil">
+        <p>Gosto de usar a criatividade para fazer interfaces minimalistas e funcionais, uma estudante de programação em constante desenvolvimento e com forte espírito de trabalho em equipe. </p>
+        <p> Meus interesses são caseiros e do tipo de "coisa de nerdola", como ler, ver vídeos sobre os estudos e um bom jogo de fps no pc.</p>
+      </div>
+    </section>
+
+    <!-- Formação & Idiomas -->
+    <section id="formacao" class="section">
+      <h2>Formação & Idiomas</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Engenharia de software</h3>
+          <p><strong>Instituição:</strong> UNINTER </p>
+          <p><strong>Período:</strong> janeiro 2025- atualmente </p>
+          <p><strong>Ênfase:</strong> Desenvolvimento Web, front, design, lógica.</p>
+        </article>
+        <article class="card">
+          <h3>Idiomas</h3>
+          <ul>
+            <li>Português — Nativo</li>
+            <li>Inglês — Intermediário</li>
+            <li>Espanhol — Intermediário</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="section">
+      <h2>Portfólio</h2>
+      <p class="lead">Clique em cada projeto para abrir o site externo:</p>
+
+      <div class="apps-grid">
+        <!-- calculadora -->
+        <a href="calculadora.html" target="_blank" class="app" aria-labelledby="calc-title">
+          <h3 id="calc-title">Calculadora</h3>
+          <p class="hint">Clique para abrir a calculadora em outro site.</p>
+        </a>
+
+        <!--relogio -->
+        <a href="relogio.html" target="_blank" class="app" aria-labelledby="clock-title">
+          <h3 id="clock-title"> Relógio Digital</h3>
+          <p class="hint">Clique para abrir o relógio em outro site.</p>
+        </a>
+
+        <!--jogo cobra -->
+        <a href="jogocobrinha.html" target="_blank" class="app" aria-labelledby="snake-title">
+        <h3 id="snake-title"> Jogo da cobrinha</h3>
+          <p class="hint">Clique para abrir o jogo em outro site.</p>  
+</a>
+        <!--erro kkkkk-->
+        <a href="404error.html" target="_blank" class="app" aria-labelledby="error">
+        <h3 id="error"> Página da web capibara error</h3>
+        <p class="hint">Clique para abrir a página em outro site</p>
+
+        </a>
+
+        <a href="https://juliamendoncahmkk.github.io/schwartz/" target="_blank" class="app" aria-labelledby="padaria-title">
+  <h3 id="padaria-title">Padaria Schwartz</h3>
+  <p class="hint">Projeto de site responsivo para padaria com carrinho e finalização no WhatsApp.</p>
+</a>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" placeholder="Seu nome" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="voce@exemplo.com" required>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" placeholder="Como posso ajudar?" required></textarea>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="ano">2025</span> • Julia L. F. Mendonca — Todos os direitos reservados.</small>
+    </div>
+    <a href="https://www.instagram.com/juliaahmkk" target="_blank" aria-label="Instagram">
+    <!-- icone Instagram -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 24 24">
+      <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.333 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.333-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.333-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.772.127 4.637.443 3.678 1.402 2.718 2.362 2.402 3.497 2.345 4.777 2.287 6.058 2.275 6.467 2.275 12s.012 5.942.07 7.223c.057 1.28.373 2.415 1.332 3.374.959.959 2.094 1.275 3.374 1.332 1.281.058 1.69.07 7.223.07s5.942-.012 7.223-.07c1.28-.057 2.415-.373 3.374-1.332.959-.959 1.275-2.094 1.332-3.374.058-1.281.07-1.69.07-7.223s-.012-5.942-.07-7.223c-.057-1.28-.373-2.415-1.332-3.374-.959-.959-2.094-1.275-3.374-1.332C17.942.012 17.533 0 12 0z"/>
+      <circle cx="12" cy="12" r="3.5"/>
+      <circle cx="18.406" cy="5.594" r="1.44"/>
+    </svg>
+  </a>
+<br><br>
+  <a href="https://github.com/JuliaMendoncahmkk" target="_blank" aria-label="GitHub">
+    <!-- icone GitHub -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 24 24">
+      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.465-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.289-1.552 3.294-1.23 3.294-1.23.653 1.653.241 2.873.118 3.176.77.84 1.232 1.912 1.232 3.222 0 4.61-2.807 5.625-5.479 5.921.429.369.823 1.096.823 2.21 0 1.595-.014 2.88-.014 3.268 0 .321.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </svg>
+  </a>
+  </footer>
+
+<script>
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  const mensagem = document.getElementById("mensagem").value;
+
+  if(nome === "" || email === "" || mensagem === ""){
+    alert("Preencha todos os campos!");
+    return;
+  }
+
+  alert("Mensagem enviada com sucesso!");
+
+  form.reset();
+});
+</script>
+</body>
+</html>

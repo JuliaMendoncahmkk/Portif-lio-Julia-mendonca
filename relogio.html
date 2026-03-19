@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relógio Digital - Hora de Brasília</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  .clock {
+    background-color:   #3a1f80;  
+    padding: 40px 60px;
+    border-radius: 20px;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="clock" id="clock">00:00:00</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const options = { 
+      hour: '2-digit', 
+      minute: '2-digit', 
+      second: '2-digit', 
+      hour12: false, 
+      timeZone: 'America/Sao_Paulo' 
+    };
+    document.getElementById('clock').textContent = now.toLocaleTimeString('pt-BR', options);
+  }
+
+  // Atualiza imediatamente e depois a cada 1 segundo
+  updateClock();
+  setInterval(updateClock, 1000);
+</script>
+</body>
+</html>
